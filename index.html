@@ -1,0 +1,94 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+ 
+  <body>
+    <div id="title-container">
+      <h1 id="title">Arsenal Survey form </h1>
+    </div>
+    <p id="description">Let us know what you think of arsenal football club</p>
+    <form id="survey-form">
+      <fieldset id="firstfield">
+        <label id="name-label" for="name">Name (first and last): <input id="name" name="name" type="text" placeholder="Please enter your name" required></input></label>
+        <label id="number-label" for="number">Age: <input id="number" name="number" type="number" min="4" max="100" placeholder="Please enter your age" ></input></label>
+        <label id="email-label" for="email">Email address: <input id="email" name="email" type="email" placeholder="Please enter your email" required></input></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="referrer">Who is your favourite arsenal player currently?
+          <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>(select one)</option> /* Can't reselect and is selected by default */
+            <option value="1">Martin Ødegaard</option>
+            <option value="2">Bukayo Saka</option>
+            <option value="3">Gabriel Martinelli</option>
+            <option value="4">Gabriel Jesus</option>
+            <option value="5">Leandro Trossard</option>
+            <option value="6">Reiss Nelson</option>
+            <option value="7">Eddie Nketiah</option>
+            <option value="8">Emile Smith Rowe</option>
+            <option value="9">Thomas Partey</option>
+            <option value="10">Declan Rice</option>
+            <option value="11">Kai Havertz</option>
+            <option value="12">Mohamed Elneny</option>
+            <option value="13">Fabio Viera</option>
+            <option value="14">Jorginho</option>
+            <option value="15">Zinchenko</option>
+            <option value="16">Jurrien Timber</option>
+            <option value="17">Ben White</option>
+            <option value="18">William Saliba</option>
+            <option value="19">Gabriel Magalhães</option>
+            <option value="20">Rob Holding</option>
+            <option value="21">Takehiro Tomiyasu</option>
+            <option value="22">David Raya</option>
+            <option value="23">Aaron Ramsdale</option>
+            <option value="24">Jacub Kiwior</option>
+            <option value="25">Cedric Soares</option>
+            <option value="26">Don't have one</option>
+            <option value="27">Don't know</option>
+          </select>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Are you an arsenal fan?</legend>
+        <label for="arsenal-fan" class="inline"> <input id="arsenal-fan" type="radio" name="fan-or-not" class="inline" value="arsenal-fan" checked /> Yes</label>
+        <label for="not-fan" class="inline"> <input id="not-fan" type="radio" name="fan-or-not" class="inline" value="not-fan" /> No</label>
+      </fieldset>
+      
+     
+<fieldset>
+  <legend>Do you consider these <em>"traitors"</em> as a legend of the club? (tick which ones you believe deserve the status)</legend>
+  <label for="checkbox1">Robin Van Persie</label> <input type="checkbox" id="checkbox1" name="option1" class="inline" value="legend"/>
+  <label for="checkbox2">Alexis sanchez</label> <input type="checkbox" id="checkbox2" name="option2" class="inline" value ="legend"/>
+  <label for="checkbox3">Cesc Fàbregas</label> <input type="checkbox" id="checkbox2" name="option2" class="inline" value ="legend"/>
+  <textarea rows="4" cols="50" placeholder="Give your reasoning"></textarea>
+</fieldset>
+
+<h2 class="mini-title"> Rate the survey form</h2>
+<div class="rating"> 
+  <input type='radio' hidden name='rate' id='rating_5' data-idx='0'>	
+  <label for='rating_5'></label>
+
+  <input type='radio' hidden name='rate' id='rating_4' data-idx='1'>
+  <label for='rating_4'></label>
+
+  <input type='radio' hidden name='rate' id='rating_3' data-idx='2'>
+  <label for='rating_3'></label>
+
+  <input type='radio' hidden name='rate' id='rating_2' data-idx='3'>
+  <label for='rating_2'></label>
+
+  <input type='radio' hidden name='rate' id='rating_1' data-idx='4'>
+  <label for='rating_1'></label>
+</div>
+
+<button id="submit" type="submit"><span>Submit</span></button>
+
+</form>
+</body>
+  </html>
+  
